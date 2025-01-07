@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE WEB CODE</title>
+    <link rel="stylesheet" th:href="@{/require/style.css}">
+    <link rel="stylesheet" th:href="@{/require/fontawesome-free-6.1.2-web}">
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <nav>
+                <a href="#" class="logo">My Portfolio.</a>
+                <ul>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a th:href="@{portfolio2}">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contains">
+                <div class="port_container">
+                    <div class="container_1">
+                        <div class="image_div">
+                            <img class="image_one" th:href="@{index}" th:src="@{/require/devJobs.png}">
+                        </div>
+                        <div class="image_Content" >
+                            <label class="image_label"><a th:href="@{index}">User Registration System</a></label>
+                            <p class="image_content">
+                                This system allows both user and recruiter registration and provides secure role-based authentication using JWT tokens. Users are assigned roles during registration, and each role has different access rights to protected endpoints.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container_1">
+                        <div class="image_div">
+                            <img class="image_one" th:src="@{/require/devJobs.png}">
+                        </div>
+                        <div class="image_Content">
+                            <label class="image_label">User Registration System</label>
+                            <p class="image_content">
+                                This system allows both user and recruiter registration and provides secure role-based authentication using JWT tokens. Users are assigned roles during registration, and each role has different access rights to protected endpoints.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container_1">
+                        <div class="image_div">
+                            <img class="image_one" th:src="@{/require/devJobs.png}">
+                        </div>
+                        <div class="image_Content">
+                            <label class="image_label" th:href="@{/index}">User Registration System</label>
+                            <p class="image_content">
+                                This system allows both user and recruiter registration and provides secure role-based authentication using JWT tokens. Users are assigned roles during registration, and each role has different access rights to protected endpoints.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-3">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
